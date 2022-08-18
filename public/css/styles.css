@@ -1,0 +1,67 @@
+body {
+    font-family: "Poppins",sans-serif;
+    background-color: #002D62;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin:0;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    padding:10px;
+  }
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutWord {
+    background-color: #0a2351;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+    margin:0 40px;
+    border-radius: 20px;
+    border: none;
+  }
+  .alternateMeanings {
+    text-align: left;
+    margin: 0 50px;
+  }
+  form {
+    margin: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+  }
+  form>input {
+    width:300px;
+    height: 40px;
+    font-size: 1.25rem;
+    background-color: #002D62;
+    border: none;
+    border-bottom: 2px solid white;
+    color: #FFF;
+
+    margin-bottom: 20px;
+    padding:10px;
+  }
+  form>button {
+    width:96px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  .partOfSpeech {
+    text-decoration: underline;
+  }

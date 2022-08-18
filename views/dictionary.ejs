@@ -1,0 +1,47 @@
+<%- include("partials/header.ejs") %>
+
+<script>
+    if($(".wordEntered").text()=='')
+    {
+         $(".aboutWord").css("visibility","hidden")     
+    }
+    else {
+        $(".aboutWord").css("visibility","visible")  
+    }
+</script>
+<div class="container">
+    <form method="POST" action="/">
+        <input type="text" placeholder="Enter text here...." name="wordEntered"><br>
+        <button type="submit">Search</button>
+    </form>
+    <div class="wrapper">
+    <div class="aboutWord">
+        <h1 class="word"><%=wordEntered%></h1>
+        <p class="phoneticWord"><%=wordPhonetics%></p>
+        <div class="alternateMeanings">
+
+            <% wordMeanings.forEach(function(element) {  %>
+                <p class="partOfSpeech"><%=element.partOfSpeech%></p>
+                <p style="margin-bottom:20px;"><%=element.definitions[0].definition%></p>
+
+                <% if(element.definitions[0].example) { %>
+                    <p style="margin-bottom:20px;">Example: <%=element.definitions[0].example%></p>
+                <% } %>
+
+
+
+            <% })  %>
+            
+
+
+
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>
